@@ -5,7 +5,7 @@ def COLOR_MAP = [
 pipeline {
     agent any
     environment {
-        registryCredential = 'docker-hub'
+        registryCredential = 'docker-hub1'
         registry = 'shivam2908/vprofileapp'
 
     }
