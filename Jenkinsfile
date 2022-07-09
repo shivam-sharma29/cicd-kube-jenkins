@@ -39,7 +39,7 @@ pipeline {
         stage("Push Docker Image") {
             steps {
                 script {
-                    docker.withRegistry('shivam2908', registryCredential) {
+                    docker.withRegistry('https://hub.docker.com/repository/docker/shivam2908/vprofileapp', registryCredential) {
                         dockerImage.push("V$BUILD_NUMBER")
                         dockerImage.push("latest")
                     }
